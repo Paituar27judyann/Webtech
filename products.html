@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTech Shop | Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+    .card {
+      position: relative;
+      padding-bottom: 70px; /* space for button */
+    }
+
+    .card .btn.add-to-cart {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+
+    .card .btn.add-to-cart:hover {
+      transform: translateX(-50%) scale(1.05);
+      transition: 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body class="fade-in">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">WebTech Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+        </ul>
+        <a class="nav-link position-relative" href="cartpage.html">
+          🛒<span id="cart-count" class="badge bg-success">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="section-header text-white">
+    <h1 class="text-center mb-4 bg-primary py-5">WebTech Products</h1>
+    <div class="row g-4">
+
+      <!-- Desktop PC -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="desktopPC.png" class="card-img-top" alt="Desktop Computer">
+          <div class="card-body">
+            <h5 class="card-title">Desktop PC (Acer Aspire TC-1760)</h5>
+            <p class="card-text">A powerful desktop for work and light gaming. 
+              Comes with an Intel Core i5 12th Gen processor, 8GB RAM, and 1TB HDD + 256GB SSD storage.</p>
+            <p class="fw-bold text-primary">₱38,500</p>
+            <button class="btn btn-success add-to-cart" data-name="Desktop PC (Acer Aspire TC-1760)" data-price="38500">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="laptop.png" class="card-img-top" alt="Laptop">
+          <div class="card-body">
+            <h5 class="card-title">Laptop (Lenovo IdeaPad Slim 3)</h5>
+            <p class="card-text">A lightweight laptop perfect for students and professionals. 
+              It features an AMD Ryzen 5 processor, 8GB RAM, and 512GB SSD for smooth performance.</p>
+            <p class="fw-bold text-primary">₱34,999</p>
+            <button class="btn btn-success add-to-cart" data-name="Laptop (Lenovo IdeaPad Slim 3)" data-price="34999">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitor -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="monitor.png" class="card-img-top" alt="Monitor">
+          <div class="card-body">
+            <h5 class="card-title">Monitor (AOC 24B1XHS 24-inch Full HD)</h5>
+            <p class="card-text">A slim 24-inch monitor with clear Full HD display 
+              and wide viewing angles, ideal for home or office use.</p>
+            <p class="fw-bold text-primary">₱6,499</p>
+            <button class="btn btn-success add-to-cart" data-name="Monitor (AOC 24B1XHS 24-inch Full HD)" data-price="6499">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keyboard -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="keyboard.png" class="card-img-top" alt="Keyboard">
+          <div class="card-body">
+            <h5 class="card-title">Mechanical Keyboard (Redragon K552 Kumara)</h5>
+            <p class="card-text">A durable RGB backlit mechanical keyboard with tactile switches 
+              for a better typing and gaming experience.</p>
+            <p class="fw-bold text-primary">₱2,199</p>
+            <button class="btn btn-success add-to-cart" data-name="Mechanical Keyboard (Redragon K552 Kumara)" data-price="2199">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mouse -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="mouse.png" class="card-img-top" alt="Mouse">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Mouse (Logitech M185)</h5>
+            <p class="card-text">Compact and reliable wireless mouse with a long battery life 
+              and smooth tracking. Perfect for both laptop and desktop use.</p>
+            <p class="fw-bold text-primary">₱650</p>
+            <button class="btn btn-success add-to-cart" data-name="Wireless Mouse (Logitech M185)" data-price="650">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Headset -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="headset.png" class="card-img-top" alt="Headset">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Headset (Rakk Phantasm Pro RGB)</h5>
+            <p class="card-text">Comfortable headset with noise-canceling mic and colorful RGB lighting, 
+              designed for immersive gaming.</p>
+            <p class="fw-bold text-primary">₱1,899</p>
+            <button class="btn btn-success add-to-cart" data-name="Gaming Headset (Rakk Phantasm Pro RGB)" data-price="1899">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaker -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="speaker.png" class="card-img-top" alt="Speaker">
+          <div class="card-body">
+            <h5 class="card-title">Bluetooth Speaker (JBL Go 3)</h5>
+            <p class="card-text">Portable and waterproof Bluetooth speaker with strong bass and clear sound.</p>
+            <p class="fw-bold text-primary">₱2,299</p>
+            <button class="btn btn-success add-to-cart" data-name="Bluetooth Speaker (JBL Go 3)" data-price="2299">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hard Drive -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="harddrive.png" class="card-img-top" alt="Hard Drive">
+          <div class="card-body">
+            <h5 class="card-title">External Hard Drive (Seagate Expansion 1TB)</h5>
+            <p class="card-text">Reliable and portable storage device for backing up important files and media.</p>
+            <p class="fw-bold text-primary">₱3,499</p>
+            <button class="btn btn-success add-to-cart" data-name="External Hard Drive (Seagate Expansion 1TB)" data-price="3499">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power Bank -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="powerbank.png" class="card-img-top" alt="Power Bank">
+          <div class="card-body">
+            <h5 class="card-title">Power Bank (Anker PowerCore 10000mAh)</h5>
+            <p class="card-text">Compact high-capacity power bank for fast charging your phone or gadgets anytime.</p>
+            <p class="fw-bold text-primary">₱1,799</p>
+            <button class="btn btn-success add-to-cart" data-name="Power Bank (Anker PowerCore 10000mAh)" data-price="1799">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- WebCam -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow">
+          <img src="webcam.png" class="card-img-top" alt="Webcam">
+          <div class="card-body">
+            <h5 class="card-title">Webcam (Logitech C270 HD)</h5>
+            <p class="card-text">HD webcam for clear video calls and online meetings, compatible with most platforms.</p>
+            <p class="fw-bold text-primary">₱1,499</p>
+            <button class="btn btn-success add-to-cart" data-name="Webcam (Logitech C270 HD)" data-price="1499">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 WebTech Shop | All Rights Reserved</p>
+      <div>
+        <a href="#" class="text-white me-3">Privacy Policy</a>
+        <a href="#" class="text-white">Terms of Service</a>
+      </div>
+      <div class="mb-3 mt-2">
+        <a href="https://www.facebook.com/" target="_blank" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://mail.google.com/" target="_blank" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="text-white"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
